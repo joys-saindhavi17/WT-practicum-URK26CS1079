@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JOYS UNIVERSITY - Admission Portal</title>
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="Practicum WT6.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="C:\Users\joyss\Downloads\JOYS university logo.png"
+             alt="JOYS University Logo"
+             width="600">
+
+        <h1>JOYS UNIVERSITY</h1>
+
+        <p>Knowledge • Excellence • Leadership • Innovation</p>
+
+        <!-- Practicum 6: Absolute Positioning -->
+        <span class="admission-badge">ADMISSIONS OPEN</span>
+
+    </header>
+
+
+    <!-- Responsive Navigation Menu -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#courses">Courses</a>
+
+        <a href="#multimedia">Multimedia</a>
+
+        <a href="#admission">Admission</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <section id="home">
+
+        <h2>Welcome to JOYS UNIVERSITY</h2>
+
+        <p>
+            Welcome to JOYS University, a place where students discover
+            knowledge, develop skills and build a successful future.
+        </p>
+
+        <!-- Practicum 6: Relative and Absolute Positioning -->
+        <div class="campus-container">
+
+            <img src="C:\Users\joyss\Downloads\JOYS university campus.png"
+                 alt="Beautiful campus of JOYS University"
+                 width="300">
+
+            <span class="campus-label">
+                WELCOME TO JOYS UNIVERSITY
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2>About JOYS University</h2>
+
+        <p>
+            JOYS University is committed to providing quality education
+            and creating opportunities for students to achieve academic
+            and professional excellence.
+        </p>
+
+
+        <article>
+
+            <h3>Our Vision</h3>
+
+            <p>
+                To become a leading institution that inspires innovation,
+                creativity and responsible leadership.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <h3>Our Mission</h3>
+
+            <p>
+                To provide quality education and develop skilled,
+                confident and responsible graduates.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <section id="courses">
+
+        <h2>Courses Offered</h2>
+
+        <ul>
+
+            <li>B.Tech Computer Science and Engineering</li>
+
+            <li>B.Tech Artificial Intelligence and Data Science</li>
+
+            <li>B.Tech Information Technology</li>
+
+            <li>BBA</li>
+
+            <li>B.Com</li>
+
+            <li>BA English</li>
+
+        </ul>
+
+
+        <h3>Course Details</h3>
+
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+
+                <th>Course</th>
+
+                <th>Duration</th>
+
+                <th>Eligibility</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>B.Tech CSE</td>
+
+                <td>4 Years</td>
+
+                <td>12th with Mathematics</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>B.Tech AI & DS</td>
+
+                <td>4 Years</td>
+
+                <td>12th with Mathematics</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>BBA</td>
+
+                <td>3 Years</td>
+
+                <td>12th Pass</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <section id="multimedia">
+
+        <h2>University Multimedia</h2>
+
+
+        <h3>University Welcome Audio</h3>
+
+        <audio controls>
+
+            <source
+                src="C:\Users\joyss\Downloads\JOYS University audio.wav"
+                type="audio/wav">
+
+            Your browser does not support the audio element.
+
+        </audio>
+
+
+        <h3>Campus Tour Video</h3>
+
+        <video width="600" controls>
+
+            <source
+                src="C:\Users\joyss\Downloads\campus tour video.mp4"
+                type="video/mp4">
+
+            Your browser does not support the video element.
+
+        </video>
+
+
+        <h3>University Location</h3>
+
+        <iframe
+            src="https://www.google.com/maps?q=university&output=embed"
+            width="600"
+            height="300"
+            title="Map showing university location">
+        </iframe>
+
+    </section>
+
+
+    <section id="admission">
+
+        <h2>University Admission Form</h2>
+
+
+        <form>
+
+            <label for="name">Full Name:</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required>
+
+            <br><br>
+
+
+            <label for="email">Email:</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+            <br><br>
+
+
+            <label for="password">Password:</label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="6"
+                required>
+
+            <br><br>
+
+
+            <label for="phone">Phone Number:</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required>
+
+            <br><br>
+
+
+            <label for="age">Age:</label>
+
+            <input
+                type="number"
+                id="age"
+                name="age"
+                min="16"
+                max="60"
+                required>
+
+            <br><br>
+
+
+            <label for="dob">Date of Birth:</label>
+
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+                required>
+
+            <br><br>
+
+
+            <p>Gender:</p>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Male">
+
+            <label for="male">Male</label>
+
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="Female">
+
+            <label for="female">Female</label>
+
+
+            <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="Other">
+
+            <label for="other">Other</label>
+
+            <br><br>
+
+
+            <p>Interests:</p>
+
+            <input
+                type="checkbox"
+                id="sports"
+                name="interest"
+                value="Sports">
+
+            <label for="sports">Sports</label>
+
+
+            <input
+                type="checkbox"
+                id="coding"
+                name="interest"
+                value="Coding">
+
+            <label for="coding">Coding</label>
+
+
+            <input
+                type="checkbox"
+                id="music"
+                name="interest"
+                value="Music">
+
+            <label for="music">Music</label>
+
+            <br><br>
+
+
+            <label for="course">Select Course:</label>
+
+            <select
+                id="course"
+                name="course"
+                required>
+
+                <option value="">-- Select a Course --</option>
+
+                <option value="cse">B.Tech CSE</option>
+
+                <option value="ai">B.Tech AI & DS</option>
+
+                <option value="it">B.Tech IT</option>
+
+                <option value="bba">BBA</option>
+
+                <option value="bcom">B.Com</option>
+
+            </select>
+
+            <br><br>
+
+
+            <label for="address">Address:</label>
+
+            <br>
+
+            <textarea
+                id="address"
+                name="address"
+                rows="5"
+                cols="40"
+                required></textarea>
+
+            <br><br>
+
+
+            <label for="document">Upload Document:</label>
+
+            <input
+                type="file"
+                id="document"
+                name="document">
+
+            <br><br>
+
+
+            <input
+                type="submit"
+                value="Submit Application">
+
+            <input
+                type="reset"
+                value="Reset">
+
+        </form>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: admissions@joysuniversity.edu</p>
+
+        <p>Phone: +91 1223334444</p>
+
+        <p>Address: JOYS University, Tamil Nadu, India</p>
+
+    </section>
+
+
+    <!-- Practicum 6: Fixed Positioning -->
+    <a href="#home" class="back-to-top" title="Back to Top">
+        ↑
+    </a>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 JOYS UNIVERSITY. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

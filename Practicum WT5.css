@@ -1,0 +1,328 @@
+/* General Page Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header img {
+    max-width: 250px;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   PRACTICUM 5 - FLEXBOX NAVIGATION
+   ========================================= */
+
+nav {
+    background-color: #15365f;
+
+    /* Flexbox */
+    display: flex;
+
+    /* Arrange links in a row */
+    flex-direction: row;
+
+    /* Center the navigation links */
+    justify-content: center;
+
+    /* Align links vertically */
+    align-items: center;
+
+    /* Space between links */
+    gap: 10px;
+
+    /* Allow links to move to next line */
+    flex-wrap: wrap;
+
+    padding: 15px 20px;
+
+    /* Keep navigation visible */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Navigation Links */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+/* Navigation Hover Effect */
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    max-width: 1000px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #15365f;
+
+    border-bottom: 2px solid #d4af37;
+
+    padding-bottom: 8px;
+}
+
+
+/* Articles */
+
+article {
+    background-color: #eef3f9;
+
+    padding: 15px;
+
+    margin: 15px 0;
+
+    border-left: 5px solid #15365f;
+
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #15365f;
+}
+
+
+/* Images */
+
+section img {
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    margin: 20px auto;
+
+    border-radius: 8px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+th {
+    background-color: #15365f;
+
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+
+    text-align: center;
+
+    border: 1px solid #999;
+}
+
+
+/* Multimedia */
+
+audio,
+video,
+iframe {
+    display: block;
+
+    max-width: 100%;
+
+    margin: 15px auto 25px;
+}
+
+
+/* Form */
+
+form {
+    background-color: #eef3f9;
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+
+    margin-right: 5px;
+}
+
+
+/* Buttons */
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #15365f;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #d4af37;
+
+    color: #0b1f3a;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0b1f3a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   RESPONSIVE NAVIGATION
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        /* Change navigation from row to column */
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: stretch;
+
+        gap: 5px;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        text-align: center;
+
+        width: 100%;
+    }
+
+
+    header h1 {
+        font-size: 28px;
+    }
+
+
+    section {
+        margin: 15px;
+
+        padding: 18px;
+    }
+
+
+    table {
+        font-size: 14px;
+    }
+
+}

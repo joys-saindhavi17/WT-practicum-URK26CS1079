@@ -1,0 +1,1346 @@
+/* =====================================
+   GENERAL PAGE STYLING
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+}
+
+header img {
+    max-width: 250px;
+    height: auto;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.admission-badge {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #d4af37;
+    color: #0b1f3a;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+nav {
+    background-color: #15365f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+}
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 1000px;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #15365f;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 8px;
+}
+
+/* =====================================
+   ARTICLES
+===================================== */
+
+article {
+    background-color: #eef3f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #15365f;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #15365f;
+}
+
+/* =====================================
+   IMAGES
+===================================== */
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* =====================================
+   TABLES
+===================================== */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #15365f;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+/* =====================================
+   MULTIMEDIA
+===================================== */
+
+audio,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+    margin: 15px auto 25px;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* =====================================
+   ADMISSION FORM
+===================================== */
+
+form {
+    background-color: #eef3f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #15365f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #0b1f3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* =====================================
+   POSITIONING ELEMENTS
+===================================== */
+
+#about {
+    position: static;
+}
+
+.campus-container {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.campus-label {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0b1f3a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #15365f;
+    color: white;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2000;
+}
+
+.back-to-top:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+}
+
+/* =====================================
+   IMAGE GALLERY - CSS GRID
+===================================== */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    background-color: #eef3f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.caption h3 {
+    color: #15365f;
+    margin: 5px 0;
+}
+
+.caption p {
+    color: #444;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+/* =====================================
+   RESPONSIVE DESIGN - TABLET
+===================================== */
+
+@media (max-width: 900px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        max-width: 95%;
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 12px;
+    }
+
+    nav a {
+        padding: 9px 12px;
+    }
+
+    .gallery-item img {
+        height: 210px;
+    }
+}
+
+/* =====================================
+   RESPONSIVE DESIGN - MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+    header {
+        padding: 35px 15px 20px;
+    }
+
+    header img {
+        max-width: 180px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .admission-badge {
+        top: 5px;
+        right: 5px;
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    nav a {
+        text-align: center;
+        width: 100%;
+        padding: 8px;
+    }
+
+    section {
+        width: calc(100% - 24px);
+        margin: 12px auto;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    article {
+        padding: 12px;
+    }
+
+    table {
+        font-size: 12px;
+        min-width: 450px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    audio,
+    video,
+    iframe {
+        width: 100%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .campus-label {
+        font-size: 11px;
+        padding: 7px;
+        white-space: normal;
+        width: 85%;
+    }
+
+    .back-to-top {
+        bottom: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 13px;
+    }
+}
+
+/* =====================================
+   VERY SMALL MOBILE SCREENS
+===================================== */
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+    .caption {
+        padding: 10px;
+    }
+}
+
+/* =====================================
+   PRACTICUM 9 - ANIMATED INTERACTIONS
+===================================== */
+
+.animation-button,
+.close-button {
+    background-color: #15365f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+.animation-button:hover,
+.close-button:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+    transform: translateY(-3px);
+}
+
+.animation-button.button-active {
+    transform: scale(0.96);
+}
+
+.interaction-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-card {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 22px;
+    background-color: #eef3f9;
+    border-left: 5px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+}
+
+.info-card.show-card {
+    display: block;
+    animation: cardAppear 0.5s ease forwards;
+}
+
+.card-label {
+    display: inline-block;
+    color: #15365f;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.notification {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: calc(100% - 40px);
+    padding: 14px 18px;
+    background-color: #15365f;
+    color: white;
+    border-left: 5px solid #d4af37;
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30px);
+    transition: opacity 0.4s ease,
+                transform 0.4s ease,
+                visibility 0.4s ease;
+}
+
+.notification.show-notification {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.notification button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.notification button:hover {
+    transform: rotate(90deg);
+}
+
+article,
+.gallery-item {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+article:hover,
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .notification {
+        top: 75px;
+        right: 12px;
+        left: 12px;
+        max-width: none;
+        justify-content: space-between;
+        font-size: 13px;
+    }
+
+    .info-card {
+        padding: 16px;
+    }
+}
+
+/* =====================================
+   PRACTICUM 10 - DOM MANIPULATION
+===================================== */
+
+.industry-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.industry-controls input {
+    width: 100%;
+    margin: 0 0 8px;
+}
+
+.industry-controls button,
+.industry-action-button {
+    padding: 10px 16px;
+    margin: 4px 6px 4px 0;
+    border: 1px solid #15365f;
+    border-radius: 5px;
+    background-color: #15365f;
+    color: white;
+    cursor: pointer;
+}
+
+.industry-controls button:hover,
+.industry-action-button:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+}
+
+.industry-controls .cancel-edit-btn {
+    background-color: #666;
+    border-color: #666;
+}
+
+.industry-message {
+    margin: 5px 0 0;
+    color: #15365f;
+    font-weight: bold;
+}
+
+.industry-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    padding: 0;
+    margin: 15px 0;
+    list-style: none;
+}
+
+.industry-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    margin: 0;
+    border: 1px solid #d5deea;
+    border-left: 5px solid #15365f;
+    border-radius: 7px;
+    background-color: #eef3f9;
+}
+
+.industry-item strong {
+    color: #15365f;
+}
+
+.industry-item p {
+    margin: 7px 0 0;
+}
+
+.industry-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.industry-action-button {
+    margin: 0;
+    padding: 7px 10px;
+    font-size: 13px;
+}
+
+.industry-action-button.remove-industry {
+    background-color: #8b2635;
+    border-color: #8b2635;
+}
+
+.industry-empty {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px dashed #999;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .industry-list {
+        grid-template-columns: 1fr;
+    }
+
+    .industry-item {
+        flex-direction: column;
+    }
+}
+
+/* =====================================
+   PRACTICUM 11 - FORM VALIDATION
+===================================== */
+
+#industry-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#industry-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border: 1px solid #b8c5d6;
+    border-radius: 8px;
+    margin: 0;
+}
+
+#industry-form legend {
+    color: #15365f;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+#industry-form input,
+#industry-form select,
+#industry-form textarea {
+    width: 100%;
+    display: block;
+    padding: 11px;
+    margin: 0 0 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+    background-color: white;
+}
+
+#industry-form input:focus,
+#industry-form select:focus,
+#industry-form textarea:focus {
+    outline: none;
+    border: 2px solid #15365f;
+    box-shadow: 0 0 5px rgba(21, 54, 95, 0.2);
+}
+
+#industry-form input:invalid,
+#industry-form select:invalid,
+#industry-form textarea:invalid {
+    border-color: #c0392b;
+}
+
+#industry-form input:valid,
+#industry-form select:valid,
+#industry-form textarea:valid {
+    border-color: #26834a;
+}
+
+.validation-error {
+    display: block;
+    min-height: 18px;
+    margin: -6px 0 8px;
+    color: #b42318;
+    font-size: 13px;
+}
+
+.form-error {
+    color: #b42318;
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-success {
+    color: #176b38;
+    font-weight: bold;
+    margin: 0;
+}
+
+.industry-form-button,
+.industry-reset-button {
+    display: inline-block;
+    width: fit-content;
+    padding: 12px 20px;
+    margin: 4px 8px 4px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #15365f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.industry-form-button:hover,
+.industry-reset-button:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+    transform: translateY(-2px);
+}
+
+.industry-reset-button {
+    background-color: #666;
+}
+
+@media (max-width: 600px) {
+    #industry-form fieldset {
+        padding: 14px;
+    }
+
+    .industry-form-button,
+    .industry-reset-button {
+        width: 100%;
+        margin: 4px 0;
+    }
+}
+
+/* =====================================
+   PRACTICUM 12 - API INTEGRATION
+===================================== */
+
+.api-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #eef3f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.api-controls label {
+    width: 100%;
+    color: #15365f;
+}
+
+.api-controls select {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.api-controls button {
+    padding: 12px 20px;
+    background-color: #15365f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.api-controls button:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+}
+
+.api-controls button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.api-loading {
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+    background-color: #eef3f9;
+    border: 1px solid #15365f;
+    border-radius: 6px;
+    color: #15365f;
+    font-weight: bold;
+}
+
+.api-loading p {
+    margin: 0;
+}
+
+.api-error {
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff0f0;
+    border: 1px solid #c0392b;
+    border-radius: 6px;
+    color: #b42318;
+}
+
+.api-error p {
+    margin: 0;
+}
+
+.api-table-container {
+    margin-top: 20px;
+}
+
+.api-table-container h3 {
+    color: #15365f;
+    margin-bottom: 12px;
+}
+
+.table-overflow {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+#apiIndustryTable {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+#apiIndustryTable th {
+    padding: 12px;
+    background-color: #15365f;
+    color: white;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+}
+
+#apiIndustryTable td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#apiIndustryTable tbody tr:nth-child(even) {
+    background-color: #eef3f9;
+}
+
+#apiIndustryTable tbody tr:hover {
+    background-color: #e1eaf5;
+}
+
+#apiIndustryTable a {
+    color: #15365f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#apiIndustryTable a:hover {
+    color: #a17b00;
+    text-decoration: underline;
+}
+
+#apiInitialMessage {
+    padding: 15px;
+    background-color: #f8fafc;
+    border: 1px dashed #999;
+    border-radius: 6px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .api-controls {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    .api-controls select,
+    .api-controls button {
+        width: 100%;
+    }
+
+    .api-table-container h3 {
+        font-size: 17px;
+    }
+}
+
+/* =====================================
+   PRACTICUM 13 - TASK MANAGER
+===================================== */
+
+.task-manager-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.task-form-container,
+.task-display-container {
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.task-form-container h3,
+.task-display-container h3 {
+    color: #15365f;
+    margin-top: 0;
+}
+
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#taskForm label {
+    color: #15365f;
+    margin-top: 5px;
+}
+
+#taskForm input,
+#taskForm textarea,
+#taskForm select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#taskForm input:focus,
+#taskForm textarea:focus,
+#taskForm select:focus,
+.task-filter select:focus {
+    outline: none;
+    border: 2px solid #15365f;
+}
+
+.task-form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.task-form-buttons button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #15365f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-form-buttons button:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+    transform: translateY(-2px);
+}
+
+#cancelTaskEditBtn {
+    background-color: #666;
+}
+
+#taskMessage {
+    margin: 5px 0 0;
+    color: #176b38;
+    font-weight: bold;
+}
+
+/* TASK SUMMARY */
+
+.task-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 15px 0 20px;
+}
+
+.task-summary-card {
+    padding: 15px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.task-summary-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.task-summary-card h4 {
+    color: #15365f;
+    margin: 0;
+    font-size: 14px;
+}
+
+.task-summary-card p {
+    color: #15365f;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+/* TASK FILTER */
+
+.task-filter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.task-filter label {
+    color: #15365f;
+    font-weight: bold;
+}
+
+.task-filter select {
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+/* TASK TABLE */
+
+.task-table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+#taskTable {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: white;
+}
+
+#taskTable th {
+    padding: 12px;
+    background-color: #15365f;
+    color: white;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+}
+
+#taskTable td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#taskTable tbody tr:nth-child(even) {
+    background-color: #eef3f9;
+}
+
+#taskTable tbody tr:hover {
+    background-color: #e1eaf5;
+}
+
+/* TASK ACTION BUTTONS */
+
+.task-action-button {
+    padding: 7px 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 4px;
+    background-color: #15365f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-action-button:hover {
+    background-color: #d4af37;
+    color: #0b1f3a;
+    transform: translateY(-2px);
+}
+
+.task-action-button.delete-task {
+    background-color: #a52a2a;
+}
+
+.task-action-button.delete-task:hover {
+    background-color: #d9534f;
+    color: white;
+}
+
+.task-status-select {
+    width: 130px;
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#noTasksMessage {
+    padding: 15px;
+    border: 1px dashed #999;
+    border-radius: 5px;
+    text-align: center;
+    color: #555;
+}
+
+/* MOBILE TASK MANAGER */
+
+@media (max-width: 700px) {
+    .task-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .task-form-container,
+    .task-display-container {
+        padding: 13px;
+    }
+
+    .task-filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-filter select {
+        width: 100%;
+    }
+
+    .task-form-buttons {
+        flex-direction: column;
+    }
+
+    .task-form-buttons button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .task-summary {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .task-summary-card {
+        padding: 10px 5px;
+    }
+
+    .task-summary-card h4 {
+        font-size: 12px;
+    }
+
+    .task-summary-card p {
+        font-size: 20px;
+    }
+}
